@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - View Orders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Dashboard - View Orders</h1>
+      <nav>
+        <ul>
+          <li><a href="admin.html">Manage Products</a></li>
+          <li><a href="order.html">View Orders</a></li>
+          <li><a href="index.html">Go to Store</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="view-orders">
+        <h2>Customer Orders</h2>
+
+        <table id="orders-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer Name</th>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Total Price</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Example Order Row -->
+            <tr>
+              <td>ORD12345</td>
+              <td>John Doe</td>
+              <td>Mac Book</td>
+              <td>1</td>
+              <td>Tsh1,000,000.00</td>
+              <td>Pending</td>
+              <td>
+                <button onclick="viewOrderDetails('ORD12345')">
+                  View Details
+                </button>
+                <button onclick="changeOrderStatus('ORD12345')">
+                  Mark as Shipped
+                </button>
+              </td>
+            </tr>
+            <!-- More orders will be added dynamically -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 KAFUKA E-commerce Store</p>
+    </footer>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAFUKA E-commerce Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header with title and navigation -->
+    <header>
+      <h1>KAFUKA E-commerce Store</h1>
+      <nav>
+        <ul>
+          <li><a href="admin.html">Admin Panel</a></li>
+          <li><a href="cart.html">Home</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Product Listing -->
+    <main>
+      <section class="product-list">
+        <div class="product">
+          <img src="images/w.jpg" alt="Mac Book" />
+          <h3>Mac Book</h3>
+          <p>Tsh1,000,000.00</p>
+          <button onclick="addToCart('Mac Book', 1000000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="images/j.jpg" alt="HP-Brand" />
+          <h3>HP-Brand</h3>
+          <p>Tsh150,000.00</p>
+          <button onclick="addToCart('HP-Brand', 150000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="images/k.jpg" alt="Dell" />
+          <h3>Dell</h3>
+          <p>Tsh200,000.00</p>
+          <button onclick="addToCart('Dell', 200000)">Add to Cart</button>
+        </div>
+      </section>
+
+      <section class="product-list">
+        <!-- More products -->
+        <div class="product">
+          <img src="images/d.jpg" alt="Apple" />
+          <h3>Apple</h3>
+          <p>Tsh1,000,000.00</p>
+          <button onclick="addToCart('Apple', 1000000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="images/a.jpg" alt="HP-Elite" />
+          <h3>HP-Elite</h3>
+          <p>Tsh1,500,000.00</p>
+          <button onclick="addToCart('HP-Elite', 1500000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="images/f.jpg" alt="Sony" />
+          <h3>Sony</h3>
+          <p>Tsh200,000.00</p>
+          <button onclick="addToCart('Sony', 200000)">Add to Cart</button>
+        </div>
+      </section>
+
+      <section class="product-list">
+        <!-- More products -->
+        <div class="product">
+          <img src="images/g.jpg" alt="Infinix" />
+          <h3>Infinix</h3>
+          <p>Tsh400,000.00</p>
+          <button onclick="addToCart('Infinix', 400000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="images/p.jpg" alt="iphone" />
+          <h3>iPhone</h3>
+          <p>Tsh1,500,000.00</p>
+          <button onclick="addToCart('iPhone', 1500000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="images/l.jpg" alt="Samsung" />
+          <h3>Samsung</h3>
+          <p>Tsh3,000,000.00</p>
+          <button onclick="addToCart('Samsung', 3000000)">Add to Cart</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 KAFUKA E-commerce Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

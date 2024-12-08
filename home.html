@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Your Cart</h1>
+
+    <div id="cart">
+        <p class="empty-message" style="display: none;">Your cart is empty.</p>
+        <ul id="cart-items"></ul> <!-- Cart items list -->
+    </div>
+
+    <p id="total-price" style="display: none;">Total: Tsh 0.00</p>
+    <button class="checkout-btn" style="display: none;" onclick="checkout()">Proceed to Checkout</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
